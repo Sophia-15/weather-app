@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(assets/clear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -30rem;
+
+    display: flex;
+}
+
+/*WEATHER*/
+
+#weather {
+    flex:3;
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+}
+
+#weather h1 {
+    font-size: 7.2rem;
+    font-weight: 400;
+    padding: 10rem 2rem;
+
+    text-shadow: 0.2rem 0.2rem #5a5a5a;
+}
+
+.city {
+    font-size: 4.8rem;
+    font-weight: 300;
+
+    text-shadow: 0.2rem 0.2rem #5a5a5a;
+}
+
+/* WEATHER DETAILS*/
+
+#weather-details {
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(1rem);
+    flex: 1.5;
+    padding: 5rem 2rem ;
+    
+}
+
+#weather-details input {
+    border: none;
+    background:transparent ;
+    margin-bottom: 3rem;
+    padding: 1rem;
+
+    width: 100%;
+
+    font-size: 1.6rem;
+    color: #fff;
+
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+#weather-details input::placeholder {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#weather-details input:focus {
+    outline: none;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+}
+
+.details-text {
+   
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.details-number {
+    color: #fff;
+    padding-right: 2rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 890px) {
+    html {
+        font-size: 55%;
+    }
+
+    #weather-details {
+        flex: 2.5;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 55%;
+    }
+    
+    #weather {
+        justify-content: center;
+    }
+
+    body {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 53%;
+    }
+
+    #weather {
+        justify-content: center;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .details {
+        line-height: 4rem;
+    }
+
+    #weather-details {
+        padding: 4.2rem 2rem ;
+    }
+    
+}
+@media (max-width: 335px) {
+    html {
+        font-size: 47%;
+    }
+
+    #weather {
+        justify-content: center;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .details {
+        line-height: 4rem;
+    }
+
+    #weather-details {
+        padding: 7.8rem 2rem ;
+    }
+    
+}
+
+
+
+
+
+
