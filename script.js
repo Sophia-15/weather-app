@@ -19,9 +19,8 @@ const base = 'http://api.openweathermap.org/data/2.5/'
 
 
 input.addEventListener('keyup', function(event) {
-  if (event.keyCode == '13') {
+  if (event.keyCode == '13' || event.code == 'NumpadEnter') {
     getApi()
-    
   }
 })
 
