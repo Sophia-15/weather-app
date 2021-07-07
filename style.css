@@ -15,8 +15,7 @@ body {
     background: url(assets/clear.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -30rem;
-
+    
     display: flex;
 }
 
@@ -100,6 +99,13 @@ body {
 
 /*MEDIA QUERIES*/
 
+@media (min-width: 1440) and (max-width: 1980px) {
+    html {
+        font-size: 100%;
+    }
+
+}
+
 @media (max-width: 890px) {
     html {
         font-size: 55%;
@@ -114,14 +120,25 @@ body {
     html {
         font-size: 55%;
     }
-    
-    #weather {
-        justify-content: center;
-    }
 
     body {
         flex-direction: column;
+        background: url(assets/mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
     }
+    
+    #weather {
+        justify-content: center;
+        
+    }
+    
+    #weather-details{
+        padding: 4.2rem 2rem 34rem;
+    }
+
+    
 }
 
 @media (max-width: 380px) {
@@ -142,11 +159,11 @@ body {
     }
 
     #weather-details {
-        padding: 4.2rem 2rem 10rem;
+        padding: 4.2rem 2rem 33rem;
     }
     
 }
-@media (max-width: 335px) {
+@media (max-width: 360px) {
     html {
         font-size: 47%;
     }
@@ -164,13 +181,7 @@ body {
     }
 
     #weather-details {
-        padding: 7.8rem 2rem 15rem;
+        padding: 7.8rem 2rem 42rem;
     }
     
 }
-
-
-
-
-
-
