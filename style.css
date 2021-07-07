@@ -142,7 +142,7 @@ body {
     }
 
     #weather-details {
-        padding: 4.2rem 2rem ;
+        padding: 4.2rem 2rem 10rem;
     }
     
 }
@@ -164,7 +164,7 @@ body {
     }
 
     #weather-details {
-        padding: 7.8rem 2rem ;
+        padding: 7.8rem 2rem 15rem;
     }
     
 }
