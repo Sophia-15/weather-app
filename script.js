@@ -14,7 +14,7 @@ let minTemp = document.querySelector('.min')
 
 
 const unit = 'metric'
-const key = '8c2b8e4edb1d28bb54825802feab3d02'
+const key = 'API_KEY'
 const base = 'http://api.openweathermap.org/data/2.5/'
 
 
